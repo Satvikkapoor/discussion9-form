@@ -1,0 +1,145 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #702082;
+    background: #CFC096;
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: #702082;
+  }
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #CFC096;
+    color: #9B9A6D;
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa; 
+}
+
+input[type="submit"],
+button[type="reset"] {
+    width: 110px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #008cba; 
+    color: white;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #005f6b; 
+}
+
+input[type="submit"]:focus,
+button[type="reset"]:focus {
+    outline: 3px solid #ffbf47; 
+}
+
+.radio input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.radio label {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold; 
+}
+
+
+input[type="text"]:invalid,
+input[type="file"]:invalid,
+textarea:invalid {
+    border-color: #e53935; 
+}
+
+input[type="text"]:valid,
+input[type="file"]:valid,
+textarea:valid {
+    border-color: #4caf50; 
+}
+
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    outline: 3px solid #ffbf47; 
+}
